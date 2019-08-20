@@ -2,34 +2,48 @@ package jp.co.systena.tigerscave.shopingcart.model;
 
 public class Item {
 
-  private int itemId;
+  // 商品ID
+  private int itemid;
+
+  // 名前
   private String name;
+
+  // 価格
   private int price;
 
-  Item(int itemId, String name, int price){
-    this.itemId=itemId;
-    this.name=name;
-    this.price=price;
+  //ゲッター,セッター
+  public int getItemid() {
+    return itemid;
   }
 
-  public int getItemId() {
-    return this.itemId;
-  }
-  public void setItemId(int itemId) {
-    this.itemId = itemId;
+  public void setItemid(int itemid) {
+    this.itemid = itemid;
   }
 
   public String getName() {
     return this.name;
   }
+
   public void setName(String name) {
     this.name = name;
   }
 
   public int getPrice() {
-    return this.price;
+    return price;
   }
+
   public void setPrice(int price) {
+    this.price = price;
+  }
+
+
+  public Item() {
+
+  }
+
+  public Item(int itemid, String name, int price) {
+    this.itemid = itemid;
+    this.name = name;
     this.price = price;
   }
 
